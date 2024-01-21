@@ -5,7 +5,8 @@ from llama_index_migration_tools.main import main as init_package
 
 def handle_init_package(
     name: str,
-    kind: str
+    kind: str,
+    **kwargs: Any
 ):
     init_package(integration_name=name, integration_type=kind)
     print(f"Successfully initialized package")

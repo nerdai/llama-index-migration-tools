@@ -16,7 +16,7 @@ def _makedirs(dir: str):
 
 def main(integration_type: str, integration_name: str):
     # create new directory, works in current directory
-    pkg_name = f"llama-index-{integration_type}-{integration_name}".replace(" ", "-")
+    pkg_name = f"llama-index-{integration_type}-{integration_name}".replace(" ", "-").lower()
     print(pkg_name)
     pkg_path = os.path.join(os.getcwd(), pkg_name)
     tests_path = os.path.join(pkg_path, "tests")
@@ -36,15 +36,27 @@ def main(integration_type: str, integration_name: str):
     _create_init_file(tests_path)
     _create_init_file(pkg_src_dir)
 
-    # ceate readme and pyproject.toml
+    # create pyproject.toml
     with open(pkg_path + "/pyproject.toml", "w") as f:
         f.write(
             pyproject_str.format(
                 PACKAGE_NAME=pkg_name,
-                TYPE=integration_type,
-                NAME=integration_name
+                TYPE=integration_type.lower(),
+                NAME=integration_name.lower()
             )
         )
+    
+    # create readme
+    with open(pkg_path + "/README.md", "w") as f:
+        f.write(
+            readme_str.format(
+                PACKAGE_NAME=pkg_name,
+                TYPE=integration_type.lower().title(),
+                NAME=integration_name.lower().title()
+            )
+        )
+    
+    # co
 
 if __name__ == "__main__":
     main("test", "test pkg")
