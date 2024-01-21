@@ -9,7 +9,7 @@ readme = "README.md"
 python = "^3.10"
 
 [tool.poetry.scripts]
-llamaindex-cli = 'llama_index.command_line.command_line:main'
+llamaindex-migration = 'llama_index_migration_tools.command_line.command_line:main'
 
 [build-system]
 requires = ["poetry-core"]
