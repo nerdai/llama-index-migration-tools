@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "llama-index-migration-tools"
+version = "0.1.0"
+description = "Tool for automating annoying parts of migration efforts"
+authors = ["Andrei <andrei@nerdai.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+llamaindex-cli = 'llama_index.command_line.command_line:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
