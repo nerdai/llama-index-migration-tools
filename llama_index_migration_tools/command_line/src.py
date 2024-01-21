@@ -1,5 +1,5 @@
 import argparse
-from typing import Any, Optional
+from typing import Any
 
 from llama_index_migration_tools.main import main as init_package
 
@@ -21,13 +21,13 @@ def main() -> None:
     init_parser = subparsers.add_parser(
         "init-package", help="Initialize a llama-index package"
     )
-    init_package.add_argument(
+    init_parser.add_argument(
         "-k",
         "--kind",
         type=str,
         help="Kind of package, e.g., integration, plugin, etc."
     )
-    init_package.add_argument(
+    init_parser.add_argument(
         "-n",
         "--name",
         type=str,

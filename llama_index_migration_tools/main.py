@@ -1,7 +1,7 @@
 import os
 import shutil
 from pathlib import Path
-from templates import pyproject_str, readme_str
+from llama_index_migration_tools.templates import pyproject_str, readme_str
 
 def _create_init_file(dir: str):
     # create __init__.py
