@@ -17,7 +17,6 @@ def _makedirs(dir: str):
 def main(integration_type: str, integration_name: str):
     # create new directory, works in current directory
     pkg_name = f"llama-index-{integration_type}-{integration_name}".replace(" ", "-").lower()
-    print(pkg_name)
     pkg_path = os.path.join(os.getcwd(), pkg_name)
     tests_path = os.path.join(pkg_path, "tests")
     examples_path = os.path.join(pkg_path, "examples")
@@ -56,7 +55,11 @@ def main(integration_type: str, integration_name: str):
             )
         )
     
-    # co
+    # copy common files to folders
+    script_path = Path(__file__).parent.resolve()
+    common_path = os.path.join(script_path, "common")
+    shutil.copyfile(common_path + "/.gitignore", pkg_path + "/.gitignore")
+    shutil.copyfile(common_path + "/Makefile", pkg_path + "/Makefile")
 
 if __name__ == "__main__":
     main("test", "test pkg")
