@@ -2,6 +2,7 @@ import os
 import shutil
 from pathlib import Path
 from llama_index_migration_tools.templates import pyproject_str, readme_str
+from typing import Optional
 
 def _create_init_file(dir: str):
     # create __init__.py
@@ -17,7 +18,7 @@ def _makedirs(dir: str):
         pass
 
 
-def main(integration_type: str, integration_name: str):
+def main(integration_type: str, integration_name: str, base_file: Optional[str] = None):
     # create new directory, works in current directory
     pkg_name = f"llama-index-{integration_type}-{integration_name}".replace(" ", "-").lower()
     pkg_path = os.path.join(os.getcwd(), pkg_name)
@@ -67,6 +68,10 @@ def main(integration_type: str, integration_name: str):
     common_path = os.path.join(script_path, "common")
     shutil.copyfile(common_path + "/.gitignore", pkg_path + "/.gitignore")
     shutil.copyfile(common_path + "/Makefile", pkg_path + "/Makefile")
+
+    # copy base file
+    if base_file:
+        shutil.copyfile(base_file, pkg_src_dir + "/base.py")
 
 if __name__ == "__main__":
     main("test", "test pkg")

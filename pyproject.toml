@@ -7,6 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+jupyter = "^1.0.0"
 
 [tool.poetry.scripts]
 llamaindex-migration = 'llama_index_migration_tools.command_line.src:main'
