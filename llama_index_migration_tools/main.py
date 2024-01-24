@@ -20,7 +20,7 @@ def _makedirs(dir: str):
 
 def main(integration_type: str, integration_name: str, base_file: Optional[str] = None):
     # create new directory, works in current directory
-    pkg_name = f"llama-index-{integration_type}-{integration_name}".replace(" ", "-").lower()
+    pkg_name = f"llama-index-{integration_type}-{integration_name}".replace(" ", "-").replace("_", "-").lower()
     pkg_path = os.path.join(os.getcwd(), pkg_name)
     tests_path = os.path.join(pkg_path, "tests")
     examples_path = os.path.join(pkg_path, "examples")
