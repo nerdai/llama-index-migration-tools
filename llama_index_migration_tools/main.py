@@ -26,7 +26,7 @@ def main(integration_type: str, integration_name: str, base_file: Optional[str] 
     examples_path = os.path.join(pkg_path, "examples")
     pkg_src_dir = os.path.join(
         pkg_path,
-        f"llama_index/{integration_type.replace(' ', '_')}/{integration_name.replace(' ', '_')}"
+        f"llama_index/{integration_type}/{integration_name}".replace(' ', '_').lower()
     )
 
     # make dirs
