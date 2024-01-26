@@ -38,7 +38,7 @@ def main_hub(integration_type: str, integration_name: str, hub_path: str):
 
     # create init files
     _create_init_file(tests_path)
-
+    
     # create pyproject.toml
     with open(pkg_path + "/pyproject.toml", "w") as f:
         f.write(
@@ -63,3 +63,10 @@ def main_hub(integration_type: str, integration_name: str, hub_path: str):
     dir_util.copy_tree(hub_path, pkg_src_dir)
     shutil.move(pkg_src_dir + "/README.md", pkg_path + "/README.md")
     shutil.move(pkg_src_dir + "/requirements.txt", pkg_path + "/requirements.txt")
+    # overwrite init
+    with open(pkg_src_dir + "/__init__.py", "w") as f:
+        init_string = init_str.format(
+            TYPE=integration_type.replace(" ", "_").lower(),
+            NAME=integration_name.replace(" ", "_").lower(),
+        )
+        f.write(init_string)
