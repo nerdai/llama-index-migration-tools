@@ -1,14 +1,15 @@
 import argparse
-from typing import Any
+from typing import Any, Optional
 
 from llama_index_migration_tools.main import main as init_package
 
 def handle_init_package(
     name: str,
     kind: str,
+    prefix: Optional[str] = None,
     **kwargs: Any
 ):
-    init_package(integration_name=name, integration_type=kind)
+    init_package(integration_name=name, integration_type=kind, prefix=prefix)
     print(f"Successfully initialized package")
 
 
@@ -33,6 +34,13 @@ def main() -> None:
         "--name",
         type=str,
         help="Name of python package",
+    )
+    init_parser.add_argument(
+        "-p",
+        "--prefix",
+        type=str,
+        required=False,
+        help="Name of prefix package",
     )
     init_parser.set_defaults(
         func=lambda args: handle_init_package(**vars(args))
