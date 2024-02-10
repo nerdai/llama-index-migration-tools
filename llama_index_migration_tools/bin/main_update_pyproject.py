@@ -1,5 +1,5 @@
 from typing import Dict
-from .update_pyproject_toml import update_pyproject_toml
+from ..lib.update_pyproject_toml import update_pyproject_toml
 import json
 import os
 

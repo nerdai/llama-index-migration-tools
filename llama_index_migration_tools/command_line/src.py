@@ -1,8 +1,7 @@
 import argparse
 from typing import Any, Optional
 
-from llama_index_migration_tools.main import main as init_package
-from llama_index_migration_tools.main_update_pyproject import main as update_pyproject
+from llama_index_migration_tools.lib.init_new_integration import main as init_package
 
 def handle_init_package(
     name: str,
@@ -12,14 +11,6 @@ def handle_init_package(
 ):
     init_package(integration_name=name, integration_type=kind, prefix=prefix)
     print(f"Successfully initialized package")
-
-
-def handle_pyproject_update(
-    path: str,
-    **kwargs: Any
-):
-    update_pyproject(toml_path=path)
-    print(f"Successfully updated pyproject toml")
 
 
 def main() -> None:
@@ -54,21 +45,6 @@ def main() -> None:
     init_parser.set_defaults(
         func=lambda args: handle_init_package(**vars(args))
     )
-
-    # pyproject parser
-    pyproject_parser = subparsers.add_parser(
-        "update-pyproject", help="Update pyproject.toml"
-    )
-    pyproject_parser.add_argument(
-        "-p",
-        "--path",
-        type=str,
-        help="path"
-    )
-    pyproject_parser.set_defaults(
-        func=lambda args: handle_pyproject_update(**vars(args))
-    )
-
 
     # Parse the command-line arguments
     args = parser.parse_args()
