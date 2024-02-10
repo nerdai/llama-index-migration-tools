@@ -27,7 +27,7 @@ packages = [{{include = "llama_index/"}}]
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<3.12"
-flying-delta-core = "^0.9.32"
+llama-index-core = "^0.9.55"
 
 [tool.poetry.group.dev.dependencies]
 black = {{extras = ["jupyter"], version = "<=23.9.1,>=23.7.0"}}

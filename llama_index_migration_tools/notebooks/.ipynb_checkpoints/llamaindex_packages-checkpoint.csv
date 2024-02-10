@@ -1,0 +1,2 @@
+name,version,parent_module,classes,pypi,github
+llama-index-experimental,0.0.2,llama_index.experimental,BaseParamTuner ◦ ParamTuner ◦ AsyncParamTuner ◦ RayTuneParamTuner,https://pypi.org/project/llama-index-experimental/,https://github.com/nerdai/llama_index/tree/nerdai/migration-v0_10_0/llama-index-experimental
