@@ -13,7 +13,7 @@ def update_pyproject_toml(toml_path: str, version_registry: Dict[str, str]):
     dependencies = poetry_config["dependencies"]
     for dep in dependencies.keys():
         if dep in version_registry:
-            dependencies[dep] = version_registry[dep]
+            dependencies[dep] = "^" + version_registry[dep]
 
     with open(toml_path, "w") as f:
         toml.dump(pyproject, f)

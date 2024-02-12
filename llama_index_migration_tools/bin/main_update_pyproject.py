@@ -8,7 +8,7 @@ def main():
     # pyproject.tomls list
     with open(
         os.path.join(
-            os.path.dirname(os.path.abspath(__file__)),
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
             "llamaindex_registry.txt"
         ),
     "r") as f:
@@ -17,7 +17,7 @@ def main():
     # version_registry
     with open(
         os.path.join(
-            os.path.dirname(os.path.abspath(__file__)),
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
             "version_registry.json"
         ),
     "r") as f:
