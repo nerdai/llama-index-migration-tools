@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List
 import toml
 
 def update_pyproject_toml(toml_path: str, version_registry: Dict[str, str]):
@@ -14,6 +14,19 @@ def update_pyproject_toml(toml_path: str, version_registry: Dict[str, str]):
     for dep in dependencies.keys():
         if dep in version_registry:
             dependencies[dep] = "^" + version_registry[dep]
+
+    with open(toml_path, "w") as f:
+        toml.dump(pyproject, f)
+
+
+def add_llamahub_metadata(toml_path: str, import_path: str, classes: List[str], contains_example: bool):
+    pyproject = toml.load(toml_path)
+
+    # add llamahub metadata
+    pyproject["tool"]["llamahub"] = {}
+    pyproject["tool"]["llamahub"]["import_path"] = import_path
+    pyproject["tool"]["llamahub"]["classes"] = classes
+    pyproject["tool"]["llamahub"]["contains_example"] = contains_example
 
     with open(toml_path, "w") as f:
         toml.dump(pyproject, f)
