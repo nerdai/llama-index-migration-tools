@@ -5,6 +5,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-llava-completion
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-zephyr-query-engine
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-timescale-vector-autoretrieval
+/Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-corrective-rag
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-multi-document-agents
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-multidoc-autoretrieval
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-gmail-openai-agent
@@ -18,6 +19,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-llama-guard-moderator
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-snowflake-query-engine
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-self-rag
+/Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-self-discover
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-llama-dataset-metadata
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-stock-market-data-query-engine
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-rag-evaluator
@@ -39,6 +41,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-nebulagraph-query-engine
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-voyage-query-engine
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-infer-retrieve-rerank
+/Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-subdoc-summary
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-sentence-window-retriever
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-recursive-retriever
 /Users/nerdai/Projects/llama_index/llama-index-packs/llama-index-packs-amazon-product-extraction
@@ -54,6 +57,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-singlestoredb
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-qdrant
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-pinecone
+/Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-duckdb
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-supabase
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-upstash
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-astra
@@ -77,6 +81,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-mongodb
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-chroma
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-bagel
+/Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-clickhouse
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-txtai
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-epsilla
 /Users/nerdai/Projects/llama_index/llama-index-integrations/vector_stores/llama-index-vector-stores-lantern
@@ -96,6 +101,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/retrievers/llama-index-retrievers-bm25
 /Users/nerdai/Projects/llama_index/llama-index-integrations/retrievers/llama-index-retrievers-you
 /Users/nerdai/Projects/llama_index/llama-index-integrations/indices/llama-index-indices-managed-zilliz
+/Users/nerdai/Projects/llama_index/llama-index-integrations/indices/llama-index-indices-managed-llama-cloud
 /Users/nerdai/Projects/llama_index/llama-index-integrations/indices/llama-index-indices-managed-colbert
 /Users/nerdai/Projects/llama_index/llama-index-integrations/indices/llama-index-indices-managed-vectara
 /Users/nerdai/Projects/llama_index/llama-index-integrations/indices/llama-index-indices-managed-google
@@ -115,6 +121,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-chatgpt-plugin
 /Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-neo4j
 /Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-bing-search
+/Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-yahoo-finance
 /Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-exa
 /Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-cogniswitch
 /Users/nerdai/Projects/llama_index/llama-index-integrations/tools/llama-index-tools-azure-cv
@@ -140,11 +147,13 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-together
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-voyageai
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-gradient
+/Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-dashscope
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-huggingface
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-ollama
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-sagemaker-endpoint
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-openai
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-cohere
+/Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-huggingface-optimum-intel
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-jinaai
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-nomic
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-gemini
@@ -159,6 +168,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-elasticsearch
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-azure-openai
 /Users/nerdai/Projects/llama_index/llama-index-integrations/embeddings/llama-index-embeddings-text-embeddings-inference
+/Users/nerdai/Projects/llama_index/llama-index-integrations/callbacks/llama-index-callbacks-uptrain
 /Users/nerdai/Projects/llama_index/llama-index-integrations/callbacks/llama-index-callbacks-deepeval
 /Users/nerdai/Projects/llama_index/llama-index-integrations/callbacks/llama-index-callbacks-openinference
 /Users/nerdai/Projects/llama_index/llama-index-integrations/callbacks/llama-index-callbacks-wandb
@@ -171,6 +181,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/postprocessor/llama-index-postprocessor-longllmlingua
 /Users/nerdai/Projects/llama_index/llama-index-integrations/postprocessor/llama-index-postprocessor-rankgpt-rerank
 /Users/nerdai/Projects/llama_index/llama-index-integrations/postprocessor/llama-index-postprocessor-cohere-rerank
+/Users/nerdai/Projects/llama_index/llama-index-integrations/postprocessor/llama-index-postprocessor-presidio
 /Users/nerdai/Projects/llama_index/llama-index-integrations/postprocessor/llama-index-postprocessor-flag-embedding-reranker
 /Users/nerdai/Projects/llama_index/llama-index-integrations/graph_stores/llama-index-graph-stores-neo4j
 /Users/nerdai/Projects/llama_index/llama-index-integrations/graph_stores/llama-index-graph-stores-falkordb
@@ -210,6 +221,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/program/llama-index-program-evaporate
 /Users/nerdai/Projects/llama_index/llama-index-integrations/response_synthesizers/llama-index-response-synthesizers-google
 /Users/nerdai/Projects/llama_index/llama-index-integrations/evaluation/llama-index-evaluation-tonic-validate
+/Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-llama-parse
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-docugami
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-slack
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-youtube-transcript
@@ -338,6 +350,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-weather
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-chatgpt-plugin
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-hwp
+/Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-clickhouse
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-metal
 /Users/nerdai/Projects/llama_index/llama-index-integrations/readers/llama-index-readers-boarddocs
 /Users/nerdai/Projects/llama_index/llama-index-integrations/question_gen/llama-index-question-gen-guidance
@@ -356,6 +369,7 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-gemini
 /Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-clarifai
 /Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-llama-api
+/Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-mymagic
 /Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-llama-cpp
 /Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-perplexity
 /Users/nerdai/Projects/llama_index/llama-index-integrations/llms/llama-index-llms-rungpt
@@ -385,3 +399,5 @@
 /Users/nerdai/Projects/llama_index/llama-index-integrations/extractors/llama-index-extractors-entity
 /Users/nerdai/Projects/llama_index/llama-index-integrations/extractors/llama-index-extractors-marvin
 /Users/nerdai/Projects/llama_index/llama-index-core
+/Users/nerdai/Projects/llama_index/llama-index-core/notebooks/pack
+/Users/nerdai/Projects/llama_index/llama-index-cli
